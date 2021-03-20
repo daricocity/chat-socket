@@ -6,7 +6,7 @@ services:
     command: npm start
     container_name: chatsocket
     restart: unless-stopped
-    volume:
+    volumes:
       - .:/chatsocket
       - /chatsocket/node_modules
     ports:
